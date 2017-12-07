@@ -1,0 +1,93 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: #F4F4F4;
+}
+
+.on-this-day {
+  width: 100%;
+}
+
+.logo {
+  font-size: 80px;
+  margin: 0;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.tabs {
+  display: inline-block;
+  width: 100%;
+}
+
+.tabs ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+}
+
+.tabs ul li {
+  margin: 0 40px;
+}
+
+.tabs button {
+  background: #2196F3;
+  outline: none;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+.tabs ul li .active {
+  background: #1565C0;
+}
+
+.tabs ul li button:hover {
+  transition: .3s;
+  background: rgba(33,150,243 ,.3);
+  cursor: pointer;
+}
+
+.content-wrapper {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.post {
+  padding: 10px;
+  color: #303030;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.post span {
+  font-size: 15px;
+  color: #A2A2A2;
+}
+
+.post a {
+  text-decoration: none;
+  color: #2196F3;
+}
+.post .text {
+  margin: 0;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media(max-width: 768px) {
+  .tabs ul li {
+    margin: 0 10px;
+  }
+}
