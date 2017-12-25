@@ -19,7 +19,7 @@ class OnThisDay extends Component {
     const events = [];
     const births = [];
     const deaths = [];
-    await axios.get('https://history.muffinlabs.com/date').then(res => {
+    await axios.get('http://history.muffinlabs.com/date').then(res => {
       const data = res.data.data;
       data.Events.forEach(val => events.push(val));
       data.Births.forEach(val => births.push(val));
